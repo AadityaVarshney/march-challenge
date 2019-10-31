@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+int t,n,a,i;
+cin>>t;
+while(t-->0){
+    cin>>n;
+    int c,count=0,ans=0,ans2=0;
+    c=0;
+    for(i=1;i<=n;i++){
+        cin>>a;
+        if(a>0){
+            count++;
+        }
+        else
+        c++;
+
+    }
+    if(count>=c){
+        ans=count;
+    }
+    else
+    ans=c;
+
+    if(c!=0){
+        ans2=n-ans;
+    }
+    else ans2=n;
+
+    
+    cout<<ans<<" "<<ans2<<endl;
+}
+}
